@@ -1,0 +1,433 @@
+.frame {
+  animation: floatY 6s ease-in-out infinite;
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  width: 100%;
+}
+
+/* ---- Top bar ---- */
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: #fff;
+}
+
+.topBarBrand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.topBarLogo {
+  border-radius: 7px;
+}
+
+.topBarActions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.iconButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.14);
+  border: none;
+  color: #fff;
+}
+
+.badge {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 3px;
+  border-radius: var(--radius-full);
+  background: var(--color-red);
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--color-primary);
+}
+
+.userChip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  border-radius: var(--radius-full);
+  padding: 4px 10px 4px 4px;
+  color: #fff;
+}
+
+.userAvatar {
+  border-radius: var(--radius-full);
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.15;
+}
+
+.userName {
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.userRole {
+  font-size: 0.65rem;
+  opacity: 0.85;
+}
+
+/* ---- Body layout ---- */
+.body {
+  display: grid;
+  grid-template-columns: 176px 1fr;
+}
+
+.sidebar {
+  border-right: 1px solid var(--color-border);
+  padding: 16px 10px;
+  background: #fbfdfc;
+}
+
+.sidebarList {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.sidebarItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--color-muted);
+}
+
+.sidebarItemActive {
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
+  font-weight: 600;
+}
+
+.main {
+  padding: 20px 22px 26px;
+  min-width: 0;
+}
+
+.mainHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.welcome {
+  font-size: 0.78rem;
+  color: var(--color-muted);
+  margin-bottom: 2px;
+}
+
+.greeting {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.subtext {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  margin-top: 4px;
+}
+
+.dateChip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  font-size: 0.72rem;
+  color: var(--color-body);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.dateChipDay {
+  color: var(--color-muted);
+}
+
+/* ---- Stat grid ---- */
+.statGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.statCard {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: var(--color-surface);
+}
+
+.statLabel {
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.statValue {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--color-ink);
+}
+
+.statFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.statDelta {
+  font-size: 0.7rem;
+  color: var(--color-muted);
+}
+
+.statIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: var(--radius-full);
+  flex-shrink: 0;
+}
+
+.tone-blue {
+  color: var(--color-blue);
+}
+.tone-green {
+  color: var(--color-primary);
+}
+.tone-amber {
+  color: var(--color-amber);
+}
+.tone-purple {
+  color: var(--color-purple);
+}
+
+.iconBg-blue {
+  background: var(--color-blue-bg);
+  color: var(--color-blue);
+}
+.iconBg-green {
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+}
+.iconBg-amber {
+  background: var(--color-amber-bg);
+  color: var(--color-amber);
+}
+.iconBg-purple {
+  background: var(--color-purple-bg);
+  color: var(--color-purple);
+}
+
+/* ---- Sessions ---- */
+.sessionsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.sessionsHeader h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.viewAll {
+  font-size: 0.78rem;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.sessionList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sessionCard {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+}
+
+.sessionTime {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  background: var(--color-primary-light);
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+  text-align: center;
+  min-width: 66px;
+  flex-shrink: 0;
+}
+
+.sessionInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.sessionCourse {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--color-ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sessionMeta {
+  font-size: 0.72rem;
+  color: var(--color-muted);
+  margin-top: 2px;
+}
+
+.sessionRoom {
+  font-size: 0.72rem;
+  color: var(--color-muted);
+}
+
+.statusPill {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  flex-shrink: 0;
+}
+
+.statusActive {
+  animation: pulseRing 1.8s ease-out infinite;
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
+}
+
+.statusUpcoming {
+  background: var(--color-blue-bg);
+  color: var(--color-blue);
+}
+
+.moreButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: transparent;
+  color: var(--color-muted);
+  flex-shrink: 0;
+}
+
+.moreButton:hover {
+  background: #f2f4f7;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 1024px) {
+  .body {
+    grid-template-columns: 150px 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .sidebar {
+    display: none;
+  }
+
+  .body {
+    grid-template-columns: 1fr;
+  }
+
+  .statGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sessionCard {
+    flex-wrap: wrap;
+  }
+
+  .sessionInfo {
+    order: 3;
+    flex-basis: 100%;
+  }
+
+  .userInfo {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .statGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .mainHeader {
+    flex-direction: column;
+  }
+}
+
+@keyframes floatY {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 -8px;
+  }
+}
+
+@keyframes pulseRing {
+  0% {
+    box-shadow: 0 0 0 0 rgba(23, 138, 76, 0.35);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(23, 138, 76, 0);
+  }
+}

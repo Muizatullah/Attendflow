@@ -1,0 +1,185 @@
+.wrap {
+  min-width: 0;
+}
+
+.heading {
+  margin-bottom: 24px;
+}
+
+.heading h2 {
+  font-size: 1.4rem;
+  color: var(--color-ink);
+  margin-bottom: 8px;
+}
+
+.heading p {
+  font-size: 0.9rem;
+  color: var(--color-body);
+  max-width: 48ch;
+}
+
+.cardRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 18px 16px;
+}
+
+.iconWrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-size: 0.9rem;
+  color: var(--color-ink);
+  margin-bottom: 6px;
+}
+
+.line {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  line-height: 1.4;
+}
+
+.note {
+  font-size: 0.74rem;
+  color: var(--color-muted);
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+.bottomRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.mapCard {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--color-surface);
+}
+
+.mapPlaceholder {
+  height: 150px;
+  background: repeating-linear-gradient(
+      45deg,
+      #dff2e6 0px,
+      #dff2e6 10px,
+      #e9f7ee 10px,
+      #e9f7ee 20px
+    ),
+    linear-gradient(180deg, #cfeeda, #e7f6ed);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mapPin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  background: var(--color-red);
+  color: #fff;
+  box-shadow: var(--shadow-md);
+}
+
+.mapPin svg {
+  transform: rotate(45deg);
+}
+
+.mapLink {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: center;
+  padding: 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  border-top: 1px solid var(--color-border);
+}
+
+.companyCard {
+  background: var(--color-primary-lighter);
+  border: 1px solid var(--color-primary-light);
+  border-radius: var(--radius-md);
+  padding: 18px;
+}
+
+.companyIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.companyCard h3 {
+  font-size: 0.9rem;
+  color: var(--color-ink);
+  margin-bottom: 6px;
+}
+
+.companyCard p {
+  font-size: 0.78rem;
+  color: var(--color-body);
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.socials {
+  display: flex;
+  gap: 8px;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  color: #fff;
+  transition: background-color var(--transition-base);
+}
+
+.socialLink:hover {
+  background: var(--color-primary-dark);
+}
+
+@media (max-width: 700px) {
+  .cardRow {
+    grid-template-columns: 1fr;
+  }
+
+  .bottomRow {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,30 @@
+<svg width="420" height="300" viewBox="0 0 420 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="420" height="300" rx="22" fill="#E7F6ED"/>
+
+  <!-- table -->
+  <rect x="40" y="220" width="340" height="16" rx="8" fill="#0F5C3A"/>
+  <rect x="170" y="184" width="80" height="46" rx="4" fill="#101828"/>
+  <rect x="178" y="192" width="64" height="30" rx="2" fill="#4ADE80"/>
+
+  <!-- person 1 -->
+  <circle cx="100" cy="140" r="26" fill="#7A4A2B"/>
+  <path d="M70 220c0-32 14-52 30-52s30 20 30 52v10H70v-10Z" fill="#178A4C"/>
+
+  <!-- person 2 -->
+  <circle cx="170" cy="130" r="26" fill="#C98A5E"/>
+  <path d="M140 220c0-36 14-58 30-58s30 22 30 58v10h-60v-10Z" fill="#0F5132"/>
+
+  <!-- person 3 (hijab) -->
+  <path d="M228 108c0-22 14-38 40-38s40 16 40 38c0 12-4 22-12 28-4-14-14-22-28-22s-24 8-28 22c-8-6-12-16-12-28Z" fill="#1F2A24"/>
+  <circle cx="268" cy="126" r="24" fill="#E7B98C"/>
+  <path d="M238 220c0-38 14-60 30-60s30 22 30 60v10h-60v-10Z" fill="#101828"/>
+
+  <!-- person 4 -->
+  <circle cx="340" cy="138" r="26" fill="#5C3A22"/>
+  <path d="M310 220c0-32 14-52 30-52s30 20 30 52v10h-60v-10Z" fill="#178A4C"/>
+
+  <!-- plant -->
+  <rect x="360" y="236" width="20" height="18" rx="3" fill="#0F5C3A"/>
+  <path d="M370 236c-10-10-10-24 0-34 10 10 10 24 0 34Z" fill="#178A4C"/>
+  <path d="M370 236c8-8 8-18 0-26-8 8-8 18 0 26Z" fill="#4ADE80"/>
+</svg>

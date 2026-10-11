@@ -1,0 +1,30 @@
+.pill {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+}
+
+.tone-green {
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
+}
+.tone-red {
+  background: var(--color-red-bg);
+  color: var(--color-red);
+}
+.tone-blue {
+  background: var(--color-blue-bg);
+  color: var(--color-blue);
+}
+.tone-amber {
+  background: var(--color-amber-bg);
+  color: var(--color-amber);
+}
+.tone-grey {
+  background: #f2f4f7;
+  color: var(--color-muted);
+}

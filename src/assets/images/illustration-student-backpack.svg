@@ -1,0 +1,35 @@
+<svg width="480" height="480" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bpBlob" x1="0" y1="0" x2="480" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E7F6ED"/>
+      <stop offset="1" stop-color="#CFEEDA"/>
+    </linearGradient>
+  </defs>
+  <path d="M240 30c110 0 190 75 190 190s-70 210-190 210S40 330 40 220 130 30 240 30Z" fill="url(#bpBlob)"/>
+
+  <!-- backpack -->
+  <rect x="150" y="230" width="90" height="120" rx="22" fill="#0F5C3A"/>
+  <rect x="168" y="220" width="54" height="30" rx="10" fill="#178A4C"/>
+  <rect x="178" y="270" width="34" height="10" rx="5" fill="#4ADE80"/>
+
+  <!-- body -->
+  <path d="M150 380c0-70 40-110 90-110s90 40 90 110v20H150v-20Z" fill="#111827"/>
+  <path d="M175 300h110l10 100H165l10-100Z" fill="#178A4C"/>
+
+  <!-- arms -->
+  <path d="M175 310c-20 10-32 30-32 55" stroke="#111827" stroke-width="22" stroke-linecap="round" fill="none"/>
+  <path d="M265 310c20 14 30 34 28 60" stroke="#111827" stroke-width="22" stroke-linecap="round" fill="none"/>
+
+  <!-- phone in hand -->
+  <rect x="280" y="358" width="26" height="46" rx="6" fill="#101828"/>
+  <rect x="284" y="364" width="18" height="30" rx="2" fill="#4ADE80"/>
+
+  <!-- head -->
+  <circle cx="220" cy="230" r="52" fill="#8A5A3C"/>
+  <path d="M172 224c0-34 22-58 48-58s48 24 48 58c0 6-1 12-3 16-6-16-14-24-45-24s-39 8-45 24c-2-4-3-10-3-16Z" fill="#1F2A24"/>
+
+  <!-- decorative dots -->
+  <circle cx="90" cy="120" r="6" fill="#178A4C" opacity="0.5"/>
+  <circle cx="400" cy="150" r="8" fill="#178A4C" opacity="0.35"/>
+  <circle cx="410" cy="340" r="5" fill="#178A4C" opacity="0.4"/>
+</svg>

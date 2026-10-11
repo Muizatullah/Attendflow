@@ -1,0 +1,57 @@
+.wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.svg {
+  transform: rotate(-90deg);
+}
+
+.track {
+  stroke: var(--color-border);
+}
+
+.progress {
+  transition: stroke-dashoffset 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tone-green {
+  stroke: var(--color-primary);
+}
+.tone-blue {
+  stroke: var(--color-blue);
+}
+.tone-purple {
+  stroke: var(--color-purple);
+}
+.tone-amber {
+  stroke: var(--color-amber);
+}
+.tone-red {
+  stroke: var(--color-red);
+}
+.tone-teal {
+  stroke: #0f9b8e;
+}
+
+.label {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.1;
+}
+
+.label strong {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--color-ink);
+}
+
+.label span {
+  font-size: 0.6rem;
+  color: var(--color-muted);
+}
