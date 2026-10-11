@@ -1,0 +1,41 @@
+{
+  "name": "attendflow-backend",
+  "version": "1.0.0",
+  "description": "Attendflow is a web-based smart attendance system that uses QR code and location verification to record student attendance efficiently and prevent fraud",
+  "keywords": [
+    "nodejs",
+    "git",
+    "github",
+    "npm",
+    "sevrer"
+  ],
+  "homepage": "https://github.com/Muizatullah/Attendflow#readme",
+  "bugs": {
+    "url": "https://github.com/Muizatullah/Attendflow/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muizatullah/Attendflow.git"
+  },
+  "license": "ISC",
+  "author": "Bakri Muizat",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.7",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.12.1",
+    "nodemailer": "^10.1.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
